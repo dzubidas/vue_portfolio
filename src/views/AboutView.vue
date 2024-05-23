@@ -1,7 +1,20 @@
+<script setup>
+// import AboutPage from '@/components/AboutPage.vue'
+
+import { useAboutData } from '@/composables/useAboutData';
+const { body, fieldTitle } = useAboutData();
+</script>
+
+<!--<template>-->
+<!--  <div class="about">-->
+<!--    <AboutPage/>-->
+<!--  </div>-->
+<!--</template>-->
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <AboutPage/>
+    <h1>{{ fieldTitle }}</h1>
+    <p>{{ body }}</p>
   </div>
 </template>
 
@@ -14,6 +27,3 @@
   }
 }
 </style>
-<script setup>
-import AboutPage from '@/components/AboutPage.vue'
-</script>

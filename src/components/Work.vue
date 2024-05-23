@@ -1,10 +1,3 @@
-<template>
-  <article>
-    <h2>{{name}}</h2> <br>
-    <span>{{title}}</span>
-  </article>
-</template>
-
 <script>
 export default {
   props: {
@@ -18,6 +11,13 @@ export default {
   }
 }
 </script>
+
+<template>
+  <article>
+    <h2>{{name}}</h2> <br>
+    <span>{{title}}</span>
+  </article>
+</template>
 
 <style lang="scss" scoped>
   article {

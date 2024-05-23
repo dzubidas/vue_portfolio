@@ -1,13 +1,3 @@
-<template>
-  <div>
-    <ul>
-      <li v-for="work in works" :key="work.nid[0].value">
-        <Work :name="work.title[0].value" :title="work.body[0].summary"/>
-      </li>
-    </ul>
-  </div>
-</template>
-
 <script>
 import axios from 'axios'
 import Work from '@/components/Work.vue'
@@ -26,7 +16,8 @@ export default {
   },
   methods: {
     fetchPortfolioData() {
-      const apiUrl = "http://localhost:32771/api/portfolio"
+      const apiUrl = "http://portfolio_api.lndo.site:8080/api/portfolio"
+      // const apiUrl = ' http://localhost:32771'
       axios.get(apiUrl)
         .then(response => {
           this.works = response.data
@@ -38,6 +29,16 @@ export default {
   }
 }
 </script>
+
+<template>
+  <div>
+    <ul>
+      <li v-for="work in works" :key="work.nid[0].value">
+        <Work :name="work.title[0].value" :title="work.body[0].summary"/>
+      </li>
+    </ul>
+  </div>
+</template>
 
 <!--<script setup>-->
 <!--import { ref, onMounted } from 'vue'-->

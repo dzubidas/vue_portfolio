@@ -1,10 +1,9 @@
 <script setup>
-// import PortfolioPage from '@/components/WorkPage.vue'
+import ProjectPage from '@/components/ProjectPage.vue'
 </script>
 
 <template>
   <div class="project">
-    <h1>This is an projects page</h1>
-
+    <ProjectPage/>
   </div>
 </template>
