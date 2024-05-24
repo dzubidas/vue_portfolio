@@ -1,26 +1,17 @@
 <script setup>
-// import PortfolioPage from '@/components/PortfolioPage.vue'
-// import AboutPage from '@/components/AboutPage.vue'
 import { useAboutData } from '@/composables/useAboutData';
 import PortfolioPage from '@/components/PortfolioPage.vue';
 
 const { summary, fieldTitle } = useAboutData();
 </script>
 
-<!--<template>-->
-<!--  <main>-->
-<!--    <About-page/>-->
-<!--    <PortfolioPage/>  -->
-<!--  </main>-->
-<!--</template>-->
-
 <template>
   <main>
-    <div>
+    <div class="about">
       <h1>{{ fieldTitle }}</h1>
       <p>{{ summary }}</p>
     </div>
-    <PortfolioPage/>
+    <PortfolioPage class="portfolio"/>
   </main>
 </template>
 

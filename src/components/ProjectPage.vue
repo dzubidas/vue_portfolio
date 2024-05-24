@@ -2,7 +2,7 @@
 import {ref, onMounted} from 'vue'
 import axios from 'axios'
 
-const apiUrl = 'http://portfolio_api.lndo.site:8080/api/projects'
+const apiUrl = 'http://portfolio_api.lndo.site:8000/api/projects'
 console.log(apiUrl)
 const body = ref('')
 const fieldTitle = ref('');

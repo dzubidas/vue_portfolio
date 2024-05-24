@@ -2,7 +2,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
 export function useAboutData() {
-  const apiUrl = 'http://portfolio_api.lndo.site:8080/api/about'
+  const apiUrl = 'http://portfolio_api.lndo.site:8000/api/about'
   const summary = ref('')
   const body = ref('')
   const fieldTitle = ref('')

@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     fetchPortfolioData() {
-      const apiUrl = "http://portfolio_api.lndo.site:8080/api/portfolio"
+      const apiUrl = "http://portfolio_api.lndo.site:8000/api/portfolio"
       // const apiUrl = ' http://localhost:32771'
       axios.get(apiUrl)
         .then(response => {

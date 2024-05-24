@@ -1,9 +1,9 @@
 <script setup>
 import {ref, onMounted} from 'vue'
 import axios from 'axios'
-import Work from '@/components/Work.vue'
+// import Work from '@/components/Work.vue'
 
-const apiUrl = 'http://portfolio_api.lndo.site:8080/api/portfolio'
+const apiUrl = 'http://portfolio_api.lndo.site:8000/api/portfolio'
 // const apiUrl = ' http://localhost:32771'
 const body = ref('')
 const fieldTitle = ref('');
@@ -29,5 +29,4 @@ onMounted(async () => {
 </template>
 
 <style>
-
 </style>
