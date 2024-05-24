@@ -27,7 +27,7 @@ const router = createRouter({
     {
       path: '/api/portfolio',
       name: 'PortfolioPage',
-      component: () => import('@/components/PortfolioPage.vue')
+      component: () => import('@/components/HomePage.vue')
     },
   ]
 })

@@ -1,6 +1,6 @@
 <script setup>
 import { useAboutData } from '@/composables/useAboutData';
-import PortfolioPage from '@/components/PortfolioPage.vue';
+import HomePage from '@/components/HomePage.vue';
 
 const { summary, fieldTitle } = useAboutData();
 </script>
@@ -11,7 +11,7 @@ const { summary, fieldTitle } = useAboutData();
       <h1>{{ fieldTitle }}</h1>
       <p>{{ summary }}</p>
     </div>
-    <PortfolioPage class="portfolio"/>
+    <HomePage class="portfolio"/>
   </main>
 </template>
 

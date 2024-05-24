@@ -1,9 +1,9 @@
 <script setup>
-import PortfolioPage from '@/components/PortfolioPage.vue'
+import WorkPage from '@/components/WorkPage.vue'
 </script>
 
 <template>
   <div class="work">
-    <PortfolioPage/>
+    <WorkPage/>
   </div>
 </template>
