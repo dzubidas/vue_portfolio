@@ -6,8 +6,8 @@ import Work from '@/components/PortfolioItem.vue'
 const works = ref([]);
 
 const fetchPortfolioData = async () => {
-  const apiUrl = "http://portfolio_api.lndo.site:8080/api/work"
-  // const apiUrl = 'http://localhost:32771';
+  //const apiUrl = "http://portfolio_api.lndo.site:8080/api/work"
+  const apiUrl = 'http://localhost:32773/api/work';
   try {
     const response = await axios.get(apiUrl)
     works.value = response.data;
